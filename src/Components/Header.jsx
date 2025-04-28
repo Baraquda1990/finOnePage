@@ -1,3 +1,4 @@
+import { useState,useEffect } from "react"
 import { Container,Col,Row,Nav,Navbar,Button } from "react-bootstrap"
 import styled from "styled-components"
 import '../assets/font/font.css'
@@ -18,47 +19,47 @@ const ContackUs=styled(Button)`
     border-radius:none;
     border:none;
     color:#fff;
-    height:100%;
     @media (max-width: 842px) {
         font-size:9pt;
     }
 `
 const WrapContainer=styled(Container)`
-        background-color:#4a657d;
-        font-family:'OpenSansBold';
-        color:#fff;
-        font-weight: bold;
-        img{
-            width:20px;
-            margin-top:-5px;
-        }
+    background-color:#4a657d;
+    font-family:'OpenSansBold';
+    color:#fff;
+    font-weight: bold;
+    img{
+        width:20px;
+        margin-top:-5px;
+    }
+    span{
+        font-size:12pt;
+    }
+    @media (max-width: 842px) {
         span{
-            font-size:12pt;
+            font-size:9pt;
         }
-        @media (max-width: 842px) {
-            span{
-                font-size:9pt;
-            }
-            img{
-                width:15px;
-                margin-top:-3px;
-            }
+        img{
+            width:15px;
+            margin-top:-3px;
         }
-        .wrap_contact_us{
-            display:flex;
-            justify-content:flex-end;
+    }
+    .wrap_contact_us{
+        display:flex;
+        justify-content:flex-end;
+    }
+    @media (max-width: 574px) {
+    .wrap_contact_us{
+        display:flex;
+        justify-content:center;
+        margin-top:5px;
         }
-        @media (max-width: 574px) {
-        .wrap_contact_us{
-            display:flex;
-            justify-content:flex-start;
-            }
-        }
+    }
 `
 const WrapMenu=styled.div`
     font-family:'OpenSansBold';
     .logo{color:#4a657d;
-            font-size:20pt;
+            font-size:15pt;
             line-height:1.5rem;
     }
     @media (max-width:994px) {
@@ -66,11 +67,32 @@ const WrapMenu=styled.div`
             font-size:8pt;
         }
         .logo{
-            font-size:15pt;
+            font-size:12pt;
         }
+    }
+    @media (max-width: 768px) {
+    .navbar-nav{
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center;
+    align-items:center;
+    }
+    .logo{
+        display:flex;
+        justify-content:center;
+    }
     }
 `
 export default function Header(){
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+      function handleResize() {
+        setIsMobile(window.innerWidth < 768);
+      }
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
     return(
         <>
         <WrapContainer fluid>
@@ -78,7 +100,7 @@ export default function Header(){
         <Col md={8} sm={10}>
             <img className='ms-3'  src={tel}/>
             <span className="mx-3">+7 777 928 91 82</span>
-            <span>|</span>
+            {!isMobile ? <span>|</span> : <br />}
             <img className='ms-3' src={mail}/>
             <span className="mx-3">Kapital.plus86@gmail.com</span>    
         </Col>
@@ -92,8 +114,9 @@ export default function Header(){
         <Container>
         <Row className='pb-3 pt-3 align-items-center'>
             <Col sm={12} md={2} className="logo">
-            ТОО Капитал<br/>плюс</Col>
-            <Col sm={12} md={{span:8,offset:2}} className="d-flex justify-content-end">
+            {!isMobile ? <span>ТОО Капитал<br/>плюс</span> : <span>ТОО Капитал плюс</span>}
+            </Col>
+            <Col sm={12} md={{span:8,offset:2}} className={(!isMobile)?"d-flex justify-content-end":"d-flex justify-content-center"}>
             <Navbar bg="light">
                 <Nav>
                     <StyledNavLink href="#about" className='px-4'>{'О нас'.toUpperCase()}</StyledNavLink>

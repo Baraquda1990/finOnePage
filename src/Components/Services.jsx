@@ -63,19 +63,19 @@ export default function Services(){
             </Col>
           </Row>
         <Row>
-          <Col md={4} sm={12} className='text-center mb-5 mt-5 card_left'>
+          <Col md={4} sm={12} className='text-center card_left'>
             <img className='mb-3' src={icl} alt="Бизнес-планирование, стратегия и исполнение" />
             <h3 className='mb-3'>{'Бизнес-планирование, стратегия и исполнение'.toUpperCase()}</h3>
             <p className='mb-3'>Мы поможем вам разработать эффективный бизнес-план, выстроить стратегию роста и успешно 
               реализовать каждый этап, чтобы ваш бизнес достиг новых высот.</p>
           </Col>
-          <Col md={4} sm={12} className='text-center mb-5 mt-5 card_center'>
+          <Col md={4} sm={12} className='text-center card_center'>
             <img className='mb-3' src={icc} alt="финансовые прогнозы и анализ" />
             <h3 className='mb-3'>{'финансовые прогнозы и анализ'.toUpperCase()}</h3>
             <p className='mb-3'>Мы предоставим точные финансовые прогнозы и глубокий анализ, чтобы вы могли принимать 
               обоснованные решения и минимизировать риски на пути к успеху.</p>
           </Col>
-          <Col md={4} sm={12} className='text-center mb-5 mt-5 card_right'>
+          <Col md={4} sm={12} className='text-center card_right'>
             <img className='mb-3' src={icr} alt="международные деловые возможности" />
             <h3 className='mb-3'>{'международные деловые возможности'.toUpperCase()}</h3>
             <p className='mb-3'>Откройте для себя новые международные деловые возможности и расширьте горизонты 

@@ -33,15 +33,14 @@ const StyledCarousel=styled(Carousel)`
   }
   @media(max-width:630px){
       h5{
-        font-size:15pt;
+        font-size:12pt;
       }
       p{
-        font-size:12px;
+        font-size:10px;
       }
   }
 
 `
-
 export default function Slider(){
 return(
 <StyledCarousel data-bs-theme="dark">
