@@ -7,15 +7,16 @@ import Practice from './Components/Practice.jsx'
 import Jumbotron from './Components/Jumbotron.jsx'
 import Partfolio from './Components/Partfolio.jsx'
 import Footer from './Components/Footer.jsx'
+import ModalSendEmail from './Components/ModalSendEmail.jsx'
 function App() {
-  const [count, setCount] = useState(0)
+  const [show, setShow] = useState(false)
   return (
     <>
-        <Header/>
+        <Header setShowModal={setShow}/>
 
         <Slider/>
 
-        <About/>
+        <About setShowModal={setShow}/>
         
         <Services/>
 
@@ -25,7 +26,9 @@ function App() {
 
         <Partfolio/>
 
-        <Footer/>
+        <Footer setShowModal={setShow}/>
+
+        <ModalSendEmail show={show} setShow={setShow}/>
     </>
   )
 }

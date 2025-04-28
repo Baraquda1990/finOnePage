@@ -83,7 +83,7 @@ const WrapMenu=styled.div`
     }
     }
 `
-export default function Header(){
+export default function Header({setShowModal}){
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
     useEffect(() => {
@@ -105,7 +105,7 @@ export default function Header(){
             <span className="mx-3">Kapital.plus86@gmail.com</span>    
         </Col>
         <Col md={4} sm={2} className="wrap_contact_us">
-            <ContackUs className='btn-info me-5' >СВЯЖИТЕСЬ С НАМИ</ContackUs>
+            <ContackUs className='btn-info me-5' onClick={()=>setShowModal(true)}>СВЯЖИТЕСЬ С НАМИ</ContackUs>
         </Col>
         </Row>
         </WrapContainer>

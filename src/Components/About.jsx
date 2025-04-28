@@ -64,7 +64,7 @@ const ContackUs=styled(Button)`
         font-size:9pt;
     }
 `
-export default function About(){
+export default function About({setShowModal}){
 return(
 <StyledWrapper id='about'>
 <Container fluid className='my-5 about' style={{maxWidth:'1536px'}}>
@@ -89,7 +89,7 @@ return(
     <p className="about_text">Если у вас хорошая кредитная история, стабильная прибыль и залог — запишитесь на 
     бесплатную консультацию. Мы разберём ваш проект и предложим оптимальные условия.
     </p>
-    <ContackUs className='btn-info me-5' >СВЯЖИТЕСЬ С НАМИ</ContackUs>
+    <ContackUs className='btn-info me-5' onClick={()=>setShowModal(true)} >СВЯЖИТЕСЬ С НАМИ</ContackUs>
   </Col>
 </Row>
 </Container></StyledWrapper>)}

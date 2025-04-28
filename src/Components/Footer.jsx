@@ -35,7 +35,7 @@ const ContackUs=styled(Button)`
         font-size:9pt;
     }
 `
-export default function Footer(){
+export default function Footer({setShowModal}){
 return(<FooterWrapper id="contacts">
 <Container fluid className='pt-5 pb-2' style={{maxWidth:'1920px'}}>
 <Row>
@@ -51,7 +51,7 @@ return(<FooterWrapper id="contacts">
       <li>г.Алматы, ул.Гоголя, здание 86</li>
       <li>г.Астана, район Нура, улица Толе-Би, дом 12</li>
     </ul>
-    <ContackUs className='btn-info my-1' >СВЯЖИТЕСЬ С НАМИ</ContackUs>
+    <ContackUs className='btn-info my-1' onClick={()=>setShowModal(true)}>СВЯЖИТЕСЬ С НАМИ</ContackUs>
   </Col>
   <Col sm={12} lg={9}>
     <iframe className="frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7fc810d68a467d448512e990f112c9a99cb28925c9fc4660ac906c39c78053e&amp;source=constructor" width="875" height="397"></iframe>
