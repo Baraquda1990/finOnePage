@@ -65,45 +65,45 @@ Error generating stack: `+n.message+`
     border-radius:none;
     border:none;
     color:#fff;
-    height:100%;
     @media (max-width: 842px) {
         font-size:9pt;
     }
 `,tS=Re(Nn)`
-        background-color:#4a657d;
-        font-family:'OpenSansBold';
-        color:#fff;
-        font-weight: bold;
-        img{
-            width:20px;
-            margin-top:-5px;
-        }
+    background-color:#4a657d;
+    font-family:'OpenSansBold';
+    color:#fff;
+    font-weight: bold;
+    img{
+        width:20px;
+        margin-top:-5px;
+    }
+    span{
+        font-size:12pt;
+    }
+    @media (max-width: 842px) {
         span{
-            font-size:12pt;
+            font-size:9pt;
         }
-        @media (max-width: 842px) {
-            span{
-                font-size:9pt;
-            }
-            img{
-                width:15px;
-                margin-top:-3px;
-            }
+        img{
+            width:15px;
+            margin-top:-3px;
         }
-        .wrap_contact_us{
-            display:flex;
-            justify-content:flex-end;
+    }
+    .wrap_contact_us{
+        display:flex;
+        justify-content:flex-end;
+    }
+    @media (max-width: 574px) {
+    .wrap_contact_us{
+        display:flex;
+        justify-content:center;
+        margin-top:5px;
         }
-        @media (max-width: 574px) {
-        .wrap_contact_us{
-            display:flex;
-            justify-content:flex-start;
-            }
-        }
+    }
 `,eS=Re.div`
     font-family:'OpenSansBold';
     .logo{color:#4a657d;
-            font-size:20pt;
+            font-size:15pt;
             line-height:1.5rem;
     }
     @media (max-width:994px) {
@@ -111,10 +111,22 @@ Error generating stack: `+n.message+`
             font-size:8pt;
         }
         .logo{
-            font-size:15pt;
+            font-size:12pt;
         }
     }
-`;function nS(){return v.jsxs(v.Fragment,{children:[v.jsx(tS,{fluid:!0,children:v.jsxs(ve,{className:"pb-3 pt-3 ps-5 align-items-center",children:[v.jsxs(qt,{md:8,sm:10,children:[v.jsx("img",{className:"ms-3",src:Fb}),v.jsx("span",{className:"mx-3",children:"+7 777 928 91 82"}),v.jsx("span",{children:"|"}),v.jsx("img",{className:"ms-3",src:Ib}),v.jsx("span",{className:"mx-3",children:"Kapital.plus86@gmail.com"})]}),v.jsx(qt,{md:4,sm:2,className:"wrap_contact_us",children:v.jsx(Pb,{className:"btn-info me-5",children:"СВЯЖИТЕСЬ С НАМИ"})})]})}),v.jsx(eS,{children:v.jsx(Nn,{children:v.jsxs(ve,{className:"pb-3 pt-3 align-items-center",children:[v.jsxs(qt,{sm:12,md:2,className:"logo",children:["ТОО Капитал",v.jsx("br",{}),"плюс"]}),v.jsx(qt,{sm:12,md:{span:8,offset:2},className:"d-flex justify-content-end",children:v.jsx(J1,{bg:"light",children:v.jsxs(Vp,{children:[v.jsx(Wi,{href:"#about",className:"px-4",children:"О нас".toUpperCase()}),v.jsx(Wi,{href:"#services",className:"px-4",children:"Наши услуги".toUpperCase()}),v.jsx(Wi,{href:"#present",className:"px-4",children:"Презентация".toUpperCase()}),v.jsx(Wi,{href:"#contacts",className:"px-4",children:"Контакты".toUpperCase()})]})})})]})})})]})}const lS="/finOnePage/assets/slide_01-BS6kMPDT.jpg",aS="/finOnePage/assets/slide_02-DwcUdLts.jpg",uS="/finOnePage/assets/slide_03-BoAvBAxf.jpg",iS="/finOnePage/assets/slide_04-dGUoqxId.jpg",cS=Re(En)`
+    @media (max-width: 768px) {
+    .navbar-nav{
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center;
+    align-items:center;
+    }
+    .logo{
+        display:flex;
+        justify-content:center;
+    }
+    }
+`;function nS(){const[u,c]=A.useState(window.innerWidth<768);return A.useEffect(()=>{function f(){c(window.innerWidth<768)}return window.addEventListener("resize",f),()=>window.removeEventListener("resize",f)},[]),v.jsxs(v.Fragment,{children:[v.jsx(tS,{fluid:!0,children:v.jsxs(ve,{className:"pb-3 pt-3 ps-5 align-items-center",children:[v.jsxs(qt,{md:8,sm:10,children:[v.jsx("img",{className:"ms-3",src:Fb}),v.jsx("span",{className:"mx-3",children:"+7 777 928 91 82"}),u?v.jsx("br",{}):v.jsx("span",{children:"|"}),v.jsx("img",{className:"ms-3",src:Ib}),v.jsx("span",{className:"mx-3",children:"Kapital.plus86@gmail.com"})]}),v.jsx(qt,{md:4,sm:2,className:"wrap_contact_us",children:v.jsx(Pb,{className:"btn-info me-5",children:"СВЯЖИТЕСЬ С НАМИ"})})]})}),v.jsx(eS,{children:v.jsx(Nn,{children:v.jsxs(ve,{className:"pb-3 pt-3 align-items-center",children:[v.jsx(qt,{sm:12,md:2,className:"logo",children:u?v.jsx("span",{children:"ТОО Капитал плюс"}):v.jsxs("span",{children:["ТОО Капитал",v.jsx("br",{}),"плюс"]})}),v.jsx(qt,{sm:12,md:{span:8,offset:2},className:u?"d-flex justify-content-center":"d-flex justify-content-end",children:v.jsx(J1,{bg:"light",children:v.jsxs(Vp,{children:[v.jsx(Wi,{href:"#about",className:"px-4",children:"О нас".toUpperCase()}),v.jsx(Wi,{href:"#services",className:"px-4",children:"Наши услуги".toUpperCase()}),v.jsx(Wi,{href:"#present",className:"px-4",children:"Презентация".toUpperCase()}),v.jsx(Wi,{href:"#contacts",className:"px-4",children:"Контакты".toUpperCase()})]})})})]})})})]})}const lS="/finOnePage/assets/slide_01-BS6kMPDT.jpg",aS="/finOnePage/assets/slide_02-DwcUdLts.jpg",uS="/finOnePage/assets/slide_03-BoAvBAxf.jpg",iS="/finOnePage/assets/slide_04-dGUoqxId.jpg",cS=Re(En)`
   font-family:'OpenSansBold';
   .carousel-indicators{
     button{width:20px;
@@ -142,10 +154,10 @@ Error generating stack: `+n.message+`
   }
   @media(max-width:630px){
       h5{
-        font-size:15pt;
+        font-size:12pt;
       }
       p{
-        font-size:12px;
+        font-size:10px;
       }
   }
 
@@ -254,7 +266,7 @@ Error generating stack: `+n.message+`
       font-size:12pt;
     }
   }
-`;function yS(){return v.jsx(vS,{children:v.jsxs(Nn,{children:[v.jsx(ve,{children:v.jsxs(qt,{className:"text-center",children:[v.jsx("h3",{className:"slogan",children:"надежное финансирование для вашего бизнеса".toUpperCase()}),v.jsx("br",{}),v.jsx("p",{className:"text",children:'Компания "Капитал Плюс" поможет Вам в оформлении кредитов на бизнес! Наша компания работает по всем сферам кредитования на бизнес цели!'})]})}),v.jsxs(ve,{children:[v.jsxs(qt,{md:4,sm:12,className:"text-center mb-5 mt-5 card_left",children:[v.jsx("img",{className:"mb-3",src:hS,alt:"Бизнес-планирование, стратегия и исполнение"}),v.jsx("h3",{className:"mb-3",children:"Бизнес-планирование, стратегия и исполнение".toUpperCase()}),v.jsx("p",{className:"mb-3",children:"Мы поможем вам разработать эффективный бизнес-план, выстроить стратегию роста и успешно реализовать каждый этап, чтобы ваш бизнес достиг новых высот."})]}),v.jsxs(qt,{md:4,sm:12,className:"text-center mb-5 mt-5 card_center",children:[v.jsx("img",{className:"mb-3",src:mS,alt:"финансовые прогнозы и анализ"}),v.jsx("h3",{className:"mb-3",children:"финансовые прогнозы и анализ".toUpperCase()}),v.jsx("p",{className:"mb-3",children:"Мы предоставим точные финансовые прогнозы и глубокий анализ, чтобы вы могли принимать обоснованные решения и минимизировать риски на пути к успеху."})]}),v.jsxs(qt,{md:4,sm:12,className:"text-center mb-5 mt-5 card_right",children:[v.jsx("img",{className:"mb-3",src:pS,alt:"международные деловые возможности"}),v.jsx("h3",{className:"mb-3",children:"международные деловые возможности".toUpperCase()}),v.jsx("p",{className:"mb-3",children:"Откройте для себя новые международные деловые возможности и расширьте горизонты вашего бизнеса на глобальной арене."})]})]})]})})}const gS="/finOnePage/assets/portfolio1-CBG2J4hj.jpg",bS="/finOnePage/assets/portfolio2-CuRcUy8l.jpg",SS="/finOnePage/assets/portfolio3-E2q3gfd2.jpg",xS="/finOnePage/assets/portfolio4-BHG42gFv.jpg",ES=Re.section`
+`;function yS(){return v.jsx(vS,{children:v.jsxs(Nn,{children:[v.jsx(ve,{children:v.jsxs(qt,{className:"text-center",children:[v.jsx("h3",{className:"slogan",children:"надежное финансирование для вашего бизнеса".toUpperCase()}),v.jsx("br",{}),v.jsx("p",{className:"text",children:'Компания "Капитал Плюс" поможет Вам в оформлении кредитов на бизнес! Наша компания работает по всем сферам кредитования на бизнес цели!'})]})}),v.jsxs(ve,{children:[v.jsxs(qt,{md:4,sm:12,className:"text-center card_left",children:[v.jsx("img",{className:"mb-3",src:hS,alt:"Бизнес-планирование, стратегия и исполнение"}),v.jsx("h3",{className:"mb-3",children:"Бизнес-планирование, стратегия и исполнение".toUpperCase()}),v.jsx("p",{className:"mb-3",children:"Мы поможем вам разработать эффективный бизнес-план, выстроить стратегию роста и успешно реализовать каждый этап, чтобы ваш бизнес достиг новых высот."})]}),v.jsxs(qt,{md:4,sm:12,className:"text-center card_center",children:[v.jsx("img",{className:"mb-3",src:mS,alt:"финансовые прогнозы и анализ"}),v.jsx("h3",{className:"mb-3",children:"финансовые прогнозы и анализ".toUpperCase()}),v.jsx("p",{className:"mb-3",children:"Мы предоставим точные финансовые прогнозы и глубокий анализ, чтобы вы могли принимать обоснованные решения и минимизировать риски на пути к успеху."})]}),v.jsxs(qt,{md:4,sm:12,className:"text-center card_right",children:[v.jsx("img",{className:"mb-3",src:pS,alt:"международные деловые возможности"}),v.jsx("h3",{className:"mb-3",children:"международные деловые возможности".toUpperCase()}),v.jsx("p",{className:"mb-3",children:"Откройте для себя новые международные деловые возможности и расширьте горизонты вашего бизнеса на глобальной арене."})]})]})]})})}const gS="/finOnePage/assets/portfolio1-CBG2J4hj.jpg",bS="/finOnePage/assets/portfolio2-CuRcUy8l.jpg",SS="/finOnePage/assets/portfolio3-E2q3gfd2.jpg",xS="/finOnePage/assets/portfolio4-BHG42gFv.jpg",ES=Re.section`
   font-family:'OpenSansBold';
   .slogan{
     font-weight:bold;
