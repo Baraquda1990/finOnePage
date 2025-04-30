@@ -102,7 +102,7 @@ export default function Header({setShowModal}){
             <span className="mx-3">+7 777 928 91 82</span>
             {!isMobile ? <span>|</span> : <br />}
             <img className='ms-3' src={mail}/>
-            <span className="mx-3">Kapital.plus86@gmail.com</span>    
+            <span className="mx-3">k.zh.80@bk.ru</span>    
         </Col>
         <Col md={4} sm={2} className="wrap_contact_us">
             <ContackUs className='btn-info me-5' onClick={()=>setShowModal(true)}>СВЯЖИТЕСЬ С НАМИ</ContackUs>

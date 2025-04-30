@@ -12,6 +12,7 @@ const StyledCarousel=styled(Carousel)`
       height:20px;
       border-radius:50%;
       background-color:#1f87e4 !important;
+      margin-bottom:10px;
     }
   }
   .carousel-caption{
