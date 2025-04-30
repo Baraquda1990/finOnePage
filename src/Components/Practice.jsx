@@ -39,12 +39,17 @@ return (<PracticeWrapper id="services"><Container className='my-5'>
           <Row>
             <Col md={3} sm={6}>
               <Card style={{border:'none'}}>
+              <Card.Img variant="top" src={portfolio_3} />
+              <Card.Body>
+                <Card.Title>{'грамотная консультация'.toUpperCase()}</Card.Title>
+              </Card.Body>
+            </Card>
+            </Col>
+            <Col md={3} sm={6}>
+              <Card style={{border:'none'}}>
               <Card.Img variant="top" src={portfolio_1} />
               <Card.Body>
-                <Card.Title>{'разработка бизнес - планов'.toUpperCase()}</Card.Title>
-                <Card.Text>
-                  Разрабатываем индивидуальные бизнес - планы для малого и среднего бизнеса.
-                </Card.Text>
+                <Card.Title>{'разработка бизнес плана'.toUpperCase()}</Card.Title>
               </Card.Body>
             </Card>
             </Col>
@@ -52,21 +57,7 @@ return (<PracticeWrapper id="services"><Container className='my-5'>
               <Card style={{border:'none'}}>
               <Card.Img variant="top" src={portfolio_2} />
               <Card.Body>
-                <Card.Title>{'курсы финансового анализа'.toUpperCase()}</Card.Title>
-                <Card.Text>
-                  Обучаем финансовому анализу на индивидуальных онлайн - курсах.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            </Col>
-            <Col md={3} sm={6}>
-              <Card style={{border:'none'}}>
-              <Card.Img variant="top" src={portfolio_3} />
-              <Card.Body>
-                <Card.Title>{'маркетинговые исследования'.toUpperCase()}</Card.Title>
-                <Card.Text>
-                  Проводим анализ рынка отрасли товаров и услуг. 
-                </Card.Text>
+                <Card.Title>{'сбор документов'.toUpperCase()}</Card.Title>
               </Card.Body>
             </Card>
             </Col>
@@ -75,9 +66,6 @@ return (<PracticeWrapper id="services"><Container className='my-5'>
               <Card.Img variant="top" src={portfolio_4} />
               <Card.Body>
                 <Card.Title>{'Услуги кредитного блоккера'.toUpperCase()}</Card.Title>
-                <Card.Text>
-                   Предоставляем услуги оформления кредитов для бизнеса.
-                </Card.Text>
               </Card.Body>
             </Card>
             </Col>

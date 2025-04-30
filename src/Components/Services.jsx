@@ -1,9 +1,9 @@
 import { Container,Row,Col,Button } from "react-bootstrap"
 import styled from "styled-components"
 import '../assets/font/font.css'
-import icl from "../assets/icon_card_left.png"
+import icl from "../assets/im1.jpg"
 import icc from "../assets/icon_card_center.png"
-import icr from "../assets/icon_card_right.png"
+import icr from "../assets/im2.jpg"
 const ServicesWrapper=styled.div`
   font-family:'OpenSansBold';
   .slogan{
@@ -14,8 +14,8 @@ const ServicesWrapper=styled.div`
     color:#4a657d;
   }
   .card_left,.card_center,.card_right{
-    padding-top: 8dvh;
-    padding-bottom: 10dvh;
+    padding-top: 4dvh;
+    padding-bottom: 4dvh;
     padding-left: 1dvw;
     padding-right: 1dvw;
     display:flex;
@@ -25,28 +25,14 @@ const ServicesWrapper=styled.div`
   }
   .card_left,.card_right{
     background-color:#edeff2;
-    color:#4a657d;
     img{
-      width:50px;
-    }
-    h3{
-      font-size:12pt;
-    }
-    p{
-      font-size:10pt;
+      width:400px;
     }
   }
   .card_center{
     background-color:#1f87e4;
-    color:#fff;
     img{
-      width:80px;
-    }
-    h3{
-      font-size:15pt;
-    }
-    p{
-      font-size:12pt;
+      width:100px;
     }
   }
 `
@@ -64,22 +50,13 @@ export default function Services(){
           </Row>
         <Row>
           <Col md={4} sm={12} className='text-center card_left'>
-            <img className='mb-3' src={icl} alt="Бизнес-планирование, стратегия и исполнение" />
-            <h3 className='mb-3'>{'Бизнес-планирование, стратегия и исполнение'.toUpperCase()}</h3>
-            <p className='mb-3'>Мы поможем вам разработать эффективный бизнес-план, выстроить стратегию роста и успешно 
-              реализовать каждый этап, чтобы ваш бизнес достиг новых высот.</p>
+            <img className="img-fluid" src={icl} alt="Бизнес-планирование, стратегия и исполнение" />
           </Col>
           <Col md={4} sm={12} className='text-center card_center'>
-            <img className='mb-3' src={icc} alt="финансовые прогнозы и анализ" />
-            <h3 className='mb-3'>{'финансовые прогнозы и анализ'.toUpperCase()}</h3>
-            <p className='mb-3'>Мы предоставим точные финансовые прогнозы и глубокий анализ, чтобы вы могли принимать 
-              обоснованные решения и минимизировать риски на пути к успеху.</p>
+            <img className="img-fluid" src={icc} alt="финансовые прогнозы и анализ" />
           </Col>
           <Col md={4} sm={12} className='text-center card_right'>
-            <img className='mb-3' src={icr} alt="международные деловые возможности" />
-            <h3 className='mb-3'>{'международные деловые возможности'.toUpperCase()}</h3>
-            <p className='mb-3'>Откройте для себя новые международные деловые возможности и расширьте горизонты 
-              вашего бизнеса на глобальной арене.</p>
+            <img className="img-fluid" src={icr} alt="международные деловые возможности" />
           </Col>
         </Row>
         </Container></ServicesWrapper>)}

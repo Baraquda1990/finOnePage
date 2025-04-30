@@ -1,6 +1,7 @@
 {
+  "homepage": "https://damirgilmanov2023.github.io/finOnePage/",
   "name": "finonepage",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
