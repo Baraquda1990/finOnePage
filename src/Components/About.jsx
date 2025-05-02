@@ -5,6 +5,7 @@ import '../assets/font/font.css'
 const StyledWrapper = styled.section`
   .about_img {
     transition: margin-left 0.3s ease;
+    margin-left:-10dvw;
   }
   .slogan{
     font-weight:bold;
@@ -18,9 +19,6 @@ const StyledWrapper = styled.section`
     font-size:15pt;
   }
   @media (max-width: 1120px) {
-    .about_img {
-      margin-left: -30vw; 
-    }
     .slogan{
       font-size:20pt;
     }
@@ -28,30 +26,45 @@ const StyledWrapper = styled.section`
       font-size:10pt;
     }
   }
-  @media (max-width: 954px) {
-    .about_img {
-      margin-left: -50vw; 
+  @media (max-width: 1280px) {
+    .about_img{
+      margin-left:-15dvw;
+    }
+  }
+  @media (max-width: 1178px) {
+    .about_img{
+      margin-left:-20dvw;
+    }
+  }
+  @media (max-width: 1070px) {
+    .about_img{
+      margin-left:-25dvw;
+    }
+  }
+  @media (max-width: 992px) {
+    .about_img{
+      margin-left:-30dvw;
+    }
+  }
+  @media (max-width: 923px) {
+    .about_img{
+      margin-left:-35dvw;
+    }
+  }
+  @media (max-width: 885px) {
+    .about_img{
+      margin-left:-40dvw;
+    }
+  }
+  @media (max-width: 810px) {
+    .about_img{
+      margin-left:-45dvw;
     }
   }
   @media (max-width: 767px) {
-    .about_img {
-      margin-left: -10vw; 
-      width:90dvw
-    }
-  }
-  @media (min-width: 1184px) {
-    .about_img {
-      margin-left:-20dvw; 
-    }
-  }
-  @media (min-width: 1280px) {
-    .about_img {
-      margin-left:-10dvw; 
-    }
-  }
-  @media (min-width: 1920px) {
-    .about_img {
-      margin-left:-5dvw; 
+    .about_img{
+      margin-left:0dvw;
+      width:95dvw;
     }
   }
 `
