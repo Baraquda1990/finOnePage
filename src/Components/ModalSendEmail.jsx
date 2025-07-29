@@ -36,6 +36,7 @@ export default function ModalSendEmail({show,setShow}){
         body: JSON.stringify({ email, phone, message })
       });
       if (response.ok) {
+        if (window.fbq) { window.fbq('track', 'Lead'); } 
         alert('Сообщение успешно отправлено!')
         handleClose()
       } else {

@@ -106,8 +106,10 @@ export default function Header({setShowModal}){
         <WrapContainer fluid>
         <Row className='pb-3 pt-3 ps-5 align-items-center'>
         <Col md={8} sm={10}>
-            <a href="tel:+77779289182" className="nav_a"><img className='ms-3'  src={tel}/>
-            <span className="mx-3">+7 777 928 91 82</span></a>
+            <a href="tel:+77779289182" className="nav_a" onClick={() => window.fbq?.('track', 'Contact')}>
+  		<img className='ms-3' src={tel} />
+  		<span className="mx-3">+7 777 928 91 82</span>
+	    </a>
             {!isMobile ? <span>|</span> : <br />}
             <a href="mailto:k.zh.80@bk.ru" className="nav_a"><img className='ms-3' src={mail}/>
             <span className="mx-3">k.zh.80@bk.ru</span></a>
@@ -118,13 +120,23 @@ export default function Header({setShowModal}){
                 <span className="mx-3">biznes_kredit_mbba</span>
             </a>
             {!isMobile ? <span>|</span> : <br />}
-            <a href="https://wa.me/77712306668?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..." target="_blank" className="nav_a">
+            <a href="https://wa.me/77712306668?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..." target="_blank" className="nav_a"onClick={() => window.fbq?.('track', 'Contact')}>
                 <img className='ms-3' src={wats}/>
                 <span className="mx-3">+7 771 230 66 68</span>
             </a>
         </Col>
         <Col md={4} sm={2} className="wrap_contact_us">
-            <ContackUs className='btn-info me-5' onClick={()=>setShowModal(true)}>СВЯЖИТЕСЬ С НАМИ</ContackUs>
+            <ContackUs
+  className='btn-info me-5'
+  onClick={() => {
+    if (window.fbq) {
+      window.fbq('track', 'Contact');
+    }
+    setShowModal(true);
+  }}
+>
+  СВЯЖИТЕСЬ С НАМИ
+</ContackUs>
         </Col>
         </Row>
         </WrapContainer>
