@@ -42,8 +42,8 @@ return(<FooterWrapper id="contacts">
   <Col sm={12} lg={{span:2,offset:1}} className="contacts_left_col">
     <h5>Контакты:</h5> 
     <ul style={{marginRight:'10px'}}>
-      <li>8 777 928 91 82</li>
-      <li>8 771 230 66 68</li>
+      <li>+7 778 621 81 34</li>
+      <li>+7 778 498 56 31</li>
     </ul>
     <h5>Адрес:</h5>
     <ul>
